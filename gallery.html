@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>École Al Karama - Galerie Photos</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="École maternelle, Galerie photos, Tiznit, Activités enfants" name="keywords" />
+    <meta content="Galerie photos de l'école maternelle et primaire Al Karama à Tiznit - Découvrez nos activités et notre environnement" name="description" />
+    <link href="logo.jpg" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        :root {
+            --primary: #1E3A8A; /* Bleu foncé */
+            --secondary: #F59E0B; /* Jaune-orange */
+        }
+        .bg-primary {
+            background-color: var(--primary) !important;
+        }
+        .text-primary {
+            color: var(--primary) !important;
+        }
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+        .btn-secondary {
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barre de Navigation -->
+    <div class="container-fluid bg-light position-relative shadow">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+            <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
+                <img src="logo.jpg"    alt="Logo AL KARAMA" style="height: 80px; margin-right: 15px; " />
+                <span class="text-primary">Al Karama</span>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+              <div class="navbar-nav font-weight-bold mx-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Accueil</a>
+                <a href="about.html" class="nav-item nav-link">À Propos</a>
+                <a href="class.html" class="nav-item nav-link ">Classes</a>
+                <a href="gallery.html" class="nav-item nav-link">Galerie</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+                <a href="" class="btn btn-primary px-4">Inscription</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Fin de la Navigation -->
+
+    <!-- Bannière Galerie -->
+    <div class="container-fluid bg-primary mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+            <h3 class="display-3 font-weight-bold text-white">Galerie Photos</h3>
+            <div class="d-inline-flex text-white">
+                <p class="m-0"><a class="text-white" href="">Accueil</a></p>
+                <p class="m-0 px-2">/</p>
+                <p class="m-0">Galerie</p>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de la Bannière -->
+
+    <!-- Galerie Start -->
+    <div class="container-fluid pt-5 pb-3">
+        <div class="container">
+            <div class="text-center pb-2">
+                <p class="section-title px-5">
+                    <span class="px-2">Notre Galerie</span>
+                </p>
+                <h1 class="mb-4">Moment de Vie à l'École</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-outline-primary m-1 active" data-filter="*">
+                            Tous
+                        </li>
+                        <li class="btn btn-outline-primary m-1" data-filter=".activites">
+                            Activités
+                        </li>
+                        <li class="btn btn-outline-primary m-1" data-filter=".apprentissage">
+                            Apprentissage
+                        </li>
+                        <li class="btn btn-outline-primary m-1" data-filter=".evenements">
+                            Événements
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item activites">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="Enfants jouant dans la cour" />
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item apprentissage">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="Atelier de dessin" />
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item evenements">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="Spectacle de fin d'année" />
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item activites">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="Jeux éducatifs" />
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item apprentissage">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="Lecture en classe" />
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item evenements">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="Célébration nationale" />
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item evenements">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="img/portfolio-7.jpg" alt="Célébration nationale" />
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Galerie -->
+
+    <!-- Pied de Page -->
+    <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <!-- Colonne 1 - Logo et description -->
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="index.html" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0" style="font-size: 40px; line-height: 40px;">
+                    <img src="logo.jpg" alt="Logo Al Karama" style="height: 40px; margin-right: 10px;">
+                    <span class="text-white">Al Karama</span>
+                </a>
+                <p>
+                    École maternelle et primaire Al Karama à Tiznit, offrant une éducation de qualité 
+                    dans un environnement bienveillant depuis 2010.
+                </p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px" href="https://web.facebook.com/Rachidlbaz2022" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px" href="https://www.instagram.com/ecolealkarama/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Colonne 2 - Nous contacter -->
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h3 class="text-primary mb-4">Nous Contacter</h3>
+                <div class="d-flex">
+                    <h4 class="fa fa-map-marker-alt text-primary"></h4>
+                    <div class="pl-3">
+                        <h5 class="text-white">Adresse</h5>
+                        <p>307 Route Boutini, Tiznit, Maroc</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <h4 class="fa fa-envelope text-primary"></h4>
+                    <div class="pl-3">
+                        <h5 class="text-white">Email</h5>
+                        <p>groupescolaire.alkarama@gmail.com</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <h4 class="fa fa-phone-alt text-primary"></h4>
+                    <div class="pl-3">
+                        <h5 class="text-white">Téléphone</h5>
+                        <p>080-8624785</p>
+                    </div>
+                </div>
+                <div class="d-flex mt-2">
+                    <h4 class="fa fa-globe text-primary"></h4>
+                    <div class="pl-3">
+                        <h5 class="text-white">Site Web</h5>
+                        <p><a href="http://www.ecolealkarama.com" class="text-white" target="_blank">www.ecolealkarama.com</a></p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Colonne 3 - Liens rapides -->
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h3 class="text-primary mb-4">Liens Rapides</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" href="index.html">
+                        <i class="fa fa-angle-right mr-2"></i>Accueil
+                    </a>
+                    <a class="text-white mb-2" href="about.html">
+                        <i class="fa fa-angle-right mr-2"></i>À Propos
+                    </a>
+                    <a class="text-white mb-2" href="class.html">
+                        <i class="fa fa-angle-right mr-2"></i>Classes
+                    </a>
+                    <a class="text-white mb-2" href="team.html">
+                        <i class="fa fa-angle-right mr-2"></i>Enseignants
+                    </a>
+                    <a class="text-white" href="contact.html">
+                        <i class="fa fa-angle-right mr-2"></i>Contact
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Colonne 4 - Newsletter -->
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h3 class="text-primary mb-4">Newsletter</h3>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control border-0 py-4" placeholder="Votre Nom" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control border-0 py-4" placeholder="Votre Email" required="required" />
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-block border-0 py-3" type="submit">
+                            S'abonner
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="container-fluid pt-5" style="border-top: 1px solid rgba(23, 162, 184, 0.2);">
+            <p class="m-0 text-center text-white">
+                &copy; <script>document.write(new Date().getFullYear())</script> École Al Karama Tiznit. Tous droits réservés.
+            </p>
+        </div>
+    </div>
+    <!-- Fin du Pied de Page -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+    <script>
+        // Mettre à jour l'année automatiquement
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
